@@ -1,3 +1,5 @@
+package activity5;
+
 import java.util.Random;
 
 /**
@@ -20,7 +22,7 @@ public class Magpie5
 	 */	
 	public String getGreeting()
 	{
-		return "Hello, let's talk.";
+		return "Hey, I'm Drew Brees and I'm a fraud!";
 	}
 	
 	/**
@@ -35,12 +37,12 @@ public class Magpie5
 		String response = "";
 		if (statement.length() == 0)
 		{
-			response = "Say something, please.";
+			response = "Ask me if I've ever won an MVP before.";
 		}
 
-		else if (findKeyword(statement, "no") >= 0)
+		else if (findKeyword(statement, "MVP") >= 0)
 		{
-			response = "Why so negative?";
+			response = "Nope!! I've never won MVP because I was never good enough!";
 		}
 		else if (findKeyword(statement, "mother") >= 0
 				|| findKeyword(statement, "father") >= 0
